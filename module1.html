@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="UTF-8" />
+        <title>AgencECo</title>
+        <link rel="stylesheet" href="module1.css">
+    </head>
+    <body> 
+            <header> 
+                    <p>Agenceco</p>
+                <nav>
+                    <ul>
+                        <li><a href=#title1>Acceuil</a></li>
+                        <li><a href=#title2>Notre equipe</a></li>
+                        <li><a href=#nosservices>Nos services</a></li>
+                        <li><a href=#témoignages>Témoignages</a></li>
+                        <li><a href=#contactez-nous>Contactez-nous</a></li>
+                        <li><a href=#notregalerie>Notre galerie</a></li>
+                    </ul>                                  
+                </nav><!--Fin de la barre de navigation-->
+            </header>
+
+            <div class="banniere"> 
+                
+                <h1 id="title1">Bienvenue dans votre<br> <span>agence web écologique</span></h1><!--Titre principale du site--> <!--c'est plus logique pour le referencement-->
+                <img src="resources/resources2/plantes.jpg" alt="plantes" id="vert">
+                
+            </div>
+
+            <section class="team"><!--  peut etre elever les class dans les sections et les englober de div -->
+                <h2 id="title2"> Notre équipe</h2>
+                <p class="team_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ratione cumque iusto recusandae, nisi maxime obcaecati consectetur rerum alias architecto accusamus delectus.</p>
+
+                <div class="cards">
+
+                 <div class="card">
+                    <img src="resources/resources2/image1.jpg" alt="JulieDupond">
+                    <h3>Julie Dupond</h3>
+                    <p>consectetur adipiscing elit. Donec sed leo in nisi vehicula bidendum</p>
+                    </div>
+
+                 <div class="card">
+                    <img src="resources/resources2/image2.jpg" alt="RomeoSylla">
+                    <h3>Romeo Sylla</h3>
+                    <p>consectetur adipiscing elit. Donec sed leo in nisi vehicula bidendum</p>
+                 </div>
+
+                    <div class="card">
+                    <img src="resources/resources2/image3.jpg" alt="JavierBardem">
+                    <h3>Javier Bardem</h3>
+                    <p>consectetur adipiscing elit. Donec sed leo in nisi vehicula bidendum</p>
+                 </div>
+                </div>
+         
+            </section><!--Fin de la premiere section-->
+            <div class="info_clients">
+                <ul>
+                 <li>2500</li>
+                    <li>clients satisfaits</li>
+                    <li>2500</li>
+                    <li>clients satisfaits</li>
+                    <li>2500</li>
+                    <li>clients satisfaits</li>
+                    <li>2500</li>
+                    <li>clients satisfaits</li>
+                </ul>
+            </div>
+            <section class="our_services"><!-- Debut de la deuxieme section -->
+                <h2 id="title3">Notre services</h2>
+                <div class="services_description">
+                    <img src="resources/resources2/Vector.jpg" alt="creation">
+                    <h3>Création de site web</h3>
+                </div> 
+
+                <div class="services_description">
+                    <img src="resources/resources2/Vector-1.jpg" alt="audit">
+                    <h3>Audit qualité</h3>
+                </div>
+            </section><!-- Fin de la deuxieme section -->
+
+            <section class="section3"><!-- Début de la troisieme section -->
+                <h2 id="contactez-nous">Contactez-nous</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ducimus. Iusto, illo?</p>
+                <div class="formulaire">
+                    <form action="traitement.php" method="post">
+                        <!-- Debut du formulaire -->
+                        <div class="form_item">
+                        <label for="nom">Nom</label>
+                            <input type="text" name="nom" id="nom" size="50" maxlength="50">
+                        </div>
+
+                        <div class="form-item1">
+                            <label for="categorie">Categorie</label>
+                            <input type="text" name="categorie" id="categorie" size="50" maxlength="50">
+                            <!-- <select name="categorie" id="categorie"> 
+                                <option value="none" selected></option>
+                                <option value="creationdesiteweb">Création de site web</option>
+                                <option value="auditqualite">Audit qualité</option> 
+                            </select> -->
+                        </div>
+
+                        <div class="form-item2">
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" name="telephone" id="telephone" size="50" maxlength="50">
+                        </div>
+
+                        <div class="form-item3">
+                            <label for="ville">Ville</label>
+                            <input type="text" name="ville" id="ville" size="50" maxlength="50">
+                        </div>
+
+                        <div class="form-item4">
+                            <label for="email">Email</label>
+                            <input type="email" name="adresse" id="email" size="50" maxlength="50">
+                        </div>
+
+                        <div class="form-item5">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+                        <input type="button" value="Envoyer"/>
+                    </form><!-- Fin du formulaire -->
+                </div>
+            </section><!-- Fin de la troisieme sectionn -->
+
+            <section class="aboutus"><!-- Début de la quatrieme section. Englober le tout dans une div?-->
+                
+                <div class="bureau">
+                    <img src="resources/resources2/bureau-collegues.jpg" alt="aboutus">
+                </div>
+
+                <div class="aboutus_description">
+                    <h2>A propos de nous</h2>
+                    <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae dolorum accusamus rem adipisci.</p>
+                </div>
+                <div class="cards2">
+
+                    <div class="card2">
+                        <img src="resources/resources2/Vector-2.jpg" alt="vec2">
+                        <h3>Ecologique</h3>
+                    </div>
+
+                    <div class="card2">
+                        <img src="resources/resources2/Vector-3.jpg" alt="vec3">
+                        <h3>Responsable</h3>
+                    </div>
+
+                    <div class="card2">
+                        <img src="resources/resources2/Vector-4.jpg" alt="vec4">
+                        <h3>24/7 Assistance</h3>
+                    </div>
+                </div>
+
+            </section><!-- Fin de la quatrieme section -->
+
+            <section class="galerie">
+
+                <div class="galerie_description">
+                    <h2>Notre galerie</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deserunt perspiciatis mollitia, alias exercitationem possimus, delectus impedit provident fugiat soluta, quibusdam iusto.</p>
+                    <img src="resources/resources2/kevin-bhagat-zNRITe8NPqY-unsplash 1.jpg" alt="galerie">
+                </div>
+            </section>
+
+            <footer>
+
+                <div class="footer_description">
+                    <div class="content">
+                        <h2>Content</h2>
+                        <p>consectetur adipiscing</p>
+                    </div>
+
+                    <div class="informations">
+                        <h2>Indormations</h2>
+                        <p>consectetur adipiscing</p>
+                    </div>
+
+                    <div class="services">
+                        <h2>Services</h2>
+                        <p>consectetur adipiscing</p>
+                    </div>
+
+                    <div class="c2">
+                        <h2>Aide</h2>
+                        <p>consectetur adipiscing</p>
+                    </div>
+
+                    <div class="mobile">
+                        <p>+33 00 00 00 00 00</p>
+                        <p>+33 00 00 00 00 00</p>
+                    </div>
+
+                    <div class="gps">
+                        <p>75001 Paris</p>
+                        <p>France</p>
+                    </div>
+                </div>
+
+                <div class="auteur">
+                    <p>Copyright &copy; 2021 AGENCECO-All rights reserved</p>
+                </div>
+            </footer>
+    </body>
+</html>
+
+
+
+
+
+
+
