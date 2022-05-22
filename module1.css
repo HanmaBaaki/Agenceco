@@ -1,6 +1,6 @@
 /* NAVIGATEUR*/
 body{
-    width: 100%;
+    
     height: 100%;
     font-size: 100%;
     background-color: #F7CACA ;
@@ -40,10 +40,7 @@ nav a{
 }
 
 /* BANNIERE */  
-.banniere{
-    width: 100%;
-    display: block;
-}
+
 
 /* NOTRE EQUIPE */
 
@@ -83,28 +80,17 @@ p.team_description{
 }
 
 .info_clients ul{
-    width: 100%;
     list-style-type: none;
     display: flex;
     flex-direction: column;
 }
 
-.info_clients li:nth-child(even){
-    font-size: 50px;
-    
-    
-}
 
-.info_clients li:nth-child(odd){
-    font-size: 80px;
-    color:#d5f31f;
-}
 
 /* NOS SERVICES */
 
 .our_services{
     text-align: center;
-    width: 100%;
     padding: 80px;
 }
 
@@ -128,7 +114,6 @@ p.team_description{
 
 .section3{
     background-color: #053b44;   
-    width: 100%; 
 }
 
 .section3 h2{
@@ -167,7 +152,6 @@ input[type="button"]{
 /* ABOUT_US */
 
 .aboutus{
-    width: 100%;
     border: solid black 10px;
 }
 
@@ -221,7 +205,6 @@ input[type="button"]{
 
 footer {
     background-color: #053b44;
-    width: 100%;
 }
 
 .footer_description {
@@ -297,11 +280,6 @@ input[type="button"] {
      
         /* BANNIERE*/
 
-        .banniere{
-            width: 100%;
-            display: block;
-        }
-
         #title1{
             position: absolute;
             top: 100%;
@@ -312,7 +290,7 @@ input[type="button"] {
             width: 60%;
         }
 
-        span{
+        span.title_color{
             color: #D5F31F;
             position: relative;
             right: 20%;
@@ -361,19 +339,34 @@ input[type="button"] {
         }
         /* BANNIERE D'INFO*/ 
         .info_clients{
+            
             background-color: #053b44;
-            display: flex;
+            text-align: center;
+
         }
 
         .info_clients ul{
             display: flex;
             flex-direction: row;
+            margin: 0;
+            padding: 0;
+            justify-content:center;
+            
         }
 
-        .info_clients li:nth-child(odd){
-            font-size: 80px;
-            color:#d5f31f;
+        .info_clients li{
+            font-size: 20px;
+            padding:40px
         }
+
+         span.info_number{
+             display: block;
+             color: #d5f31f;
+             font-size: 50px;
+
+        }
+
+        
 
         
     
