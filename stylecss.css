@@ -206,4 +206,9 @@ p.team_description{
         display: flex;
     }
 }
-       
+.services_description img {
+    background-color: #F6F5F5;
+    width: 33%;
+    padding: 10%;
+    border-radius: 40%;
+}

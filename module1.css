@@ -11,7 +11,7 @@ body{
 
 header p{
     background-color: #e1dFE5;
-    font-size: 20px;
+    font-size: 50px;
     width: 30%;
     margin: 0%;
 }
@@ -34,7 +34,7 @@ nav ul{
 }
 
 nav a{
-    font-size: 20px;
+    font-size: 50px;
     color: #1c2126;
     text-decoration: none;
 }
@@ -55,16 +55,16 @@ nav a{
 }
 
 p.team_description{
-    font-size: 90px;
+    font-size: 50px;
 }
 
 .card h3{
-    font-size: 80px;
+    font-size: 60px;
     margin: 20px;
 }
 .card p{
     
-    font-size: 80px;
+    font-size: 50px;
     width: 90%;
     margin: 20px;
 }
@@ -76,13 +76,28 @@ p.team_description{
 
 /* BARRE D'INFO */
 .info_clients{
+    text-align:center;
     background-color: #053b44; 
 }
 
 .info_clients ul{
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    justify-content:center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.info_clients li{
+    font-size: 40px;
+    padding:40px
+}
+
+ span.info_number{
+     display: block;
+     color: #d5f31f;
+     font-size: 80px;
+
 }
 
 
@@ -95,43 +110,47 @@ p.team_description{
 }
 
 .our_services h2{
+    font-size: 80px;
+}
+
+.all_services{
     font-size: 45px;
 }
 
 .services_description img{
-    background-color: #F6F5F5;
-    width: 33%;
-    padding: 10%;
-    border-radius: 40%;
+    width: 70%;
+    border-radius: 40px;
+    border: solid #F1F1F1 80px;
+    padding: 0;
 }
 
 .services_description h3{
-    font-size: 45px;
+    font-size: 80px;
 }
-
 
 /* FORMULAIRe */
 
-.section3{
+.formulaire{
     background-color: #053b44;   
 }
 
-.section3 h2{
+.formulaire h2{
     font-size: 80px;
     text-align: center;
 }
 
-.section3 p{
+.formulaire p{
     text-align: center;
     font-size: 45px;
 }
 
- .formulaire label{ 
+ .formulaire_description label{ 
      font-size: 45px; 
 } 
 
-form label{
+form {
     display: flex;
+    flex-direction: column;
 }
 
 form input{
@@ -181,7 +200,7 @@ input[type="button"]{
 
 .card2 h3 {
     text-align: center;
-    font-size: 35px;
+    font-size: 50px;
 }
 
 /* NOTRE GALERIE */
@@ -280,7 +299,7 @@ input[type="button"] {
      
         /* BANNIERE*/
 
-        #title1{
+        /* #title1{
             position: absolute;
             top: 100%;
             left: 50%;
@@ -297,9 +316,9 @@ input[type="button"] {
             font-size: 70px;
             display: block;
             width: 100%;
-        }
+        } */
 
-        #vert{
+        img#vert{
             width: 100%;
         }
         
@@ -345,33 +364,59 @@ input[type="button"] {
 
         }
 
-        .info_clients ul{
-            display: flex;
-            flex-direction: row;
-            margin: 0;
-            padding: 0;
-            justify-content:center;
-            
-        }
-
         .info_clients li{
             font-size: 20px;
-            padding:40px
         }
 
          span.info_number{
-             display: block;
-             color: #d5f31f;
-             font-size: 50px;
+            
+            font-size: 50px;    
+        }
+
+        /* NOS SERVICES*/
+
+        .our_services h2{
+            font-size: 50px;
+        }
+
+        .all_services {
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        .services_description img {
+            width: 50%;
+            border-radius: 40px;
+            border: solid #F6F5F5 80px;
+        } 
+
+        .services_description h3{
+            font-size: 30px;
+        }
+
+        /* FORMULAIRE */
+
+        .formulaire{
+            padding: 80px;
+        }
+
+        .formulaire h2{
+            font-size: 50px;
+            margin: 0%;
 
         }
 
-        
+        .formulaire p{
+            font-size: 20px;
+            margin: 0;
+        }
+
 
         
+
     
-        /* NOS SERVICES*/
-    
+        
         /* .footer_description{
         display: flex;
         }   */
