@@ -14,6 +14,7 @@ header p{
     font-size: 50px;
     width: 30%;
     margin: 0%;
+    color: #015A08;
 }
 
 header{
@@ -118,7 +119,7 @@ p.team_description{
 }
 
 .services_description img{
-    width: 70%;
+    width: 33%;
     border-radius: 40px;
     border: solid #F1F1F1 80px;
     padding: 0;
@@ -144,20 +145,36 @@ p.team_description{
     font-size: 45px;
 }
 
- .formulaire_description label{ 
-     font-size: 45px; 
-} 
-
-form {
-    display: flex;
-    flex-direction: column;
-}
 
 form input{
     width: 50%;
     height: 40px;
-    font-size: 30px;
+    font-size: 50px;
+    background-color: #053b44;
+    border: none;
+    border-bottom: solid #ffff 5px;
+    border-radius: 2px;
+    margin: 40px;
+    padding: 0;
 }
+
+#message{
+    width: 899px;
+    height: 318px;
+    background-color: #053b44;
+    border: none;
+    border-bottom: solid #ffff;
+    border-radius: 2px;
+    font-size: 20px;
+    margin: 40px;
+    padding: 0;
+
+}
+
+#email{
+    width: 90%;
+}
+
 
 input[type="button"]{
     background-color: #d5f31f;
@@ -166,6 +183,8 @@ input[type="button"]{
     border-radius: 20px;
     width: 20%;
 }
+
+
 
 
 /* ABOUT_US */
@@ -408,8 +427,82 @@ input[type="button"] {
         }
 
         .formulaire p{
+            font-size: 30px;
+            margin: 40px;
+        }
+
+        form{
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: flex-end;
+        }
+
+        .form_item-50-name{
+            width: 50%;
+        }
+
+        .form_item-50-categorie{
+            width: 50%;
+        }
+
+        .form_item-50-telephone{
+            width: 50%;
+        }
+
+        .form_item-50-ville{
+            width: 50%;
+        }
+
+        .form_item-100-email{
+            width: 100%;
+        }
+
+        #email{
+            width: 100%;
+        }
+
+        .form_item-100-message{
+            width: 100%;
+        }
+
+        #message{
+            width: 1200px;
+            height: 436px;
+            background-color: #053b44;
+            border: none;
+            border-bottom: solid #ffff;
+            border-radius: 2px;
             font-size: 20px;
-            margin: 0;
+            margin: 40px;
+            padding: 0;
+    
+        }
+
+        form input {
+            width: 50%;
+            font-size: 20px;
+            background-color: #053b44;
+            border: none;
+            border-bottom: solid #ffff;
+            border-radius: 2px;
+            margin: 40px;
+            padding: 0;
+        }
+
+        input::placeholder {
+            color: #ffff;
+        }
+
+        textarea::placeholder{
+            color: #ffff;
+        }
+
+        input[type="button"] {
+            background-color: #d5f31f;
+            color: #053b44;
+            font-weight: bold;
+            border-radius: 20px;
+            width: 10%;
         }
 
 
