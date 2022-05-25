@@ -22,7 +22,7 @@
 
             <div class="banniere"> 
                 
-                <h1 id="title1">Bienvenue dans votre<br> <span>agence web écologique</span></h1><!--Titre principale du site--> <!--c'est plus logique pour le referencement-->
+                <h1 id="banniere_title">Bienvenue dans votre <span class="title_color">agence web écologique</span></h1><!--Titre principale du site--> <!--c'est plus logique pour le referencement-->
                 <img src="resources/resources2/plantes.jpg" alt="plantes" id="vert">
                 
             </div>
@@ -36,37 +36,37 @@
                  <div class="card">
                     <img src="resources/resources2/image1.jpg" alt="JulieDupond">
                     <h3>Julie Dupond</h3>
-                    <p>consectetur adipiscing elit. Donec sed leo in nisi vehicula bidendum</p>
+                    <p>Consectetur adipiscing elit. Donec sed leo in nisi vehicula bidendum</p>
                     </div>
 
                  <div class="card">
                     <img src="resources/resources2/image2.jpg" alt="RomeoSylla">
                     <h3>Romeo Sylla</h3>
-                    <p>consectetur adipiscing elit. Donec sed leo in nisi vehicula bidendum</p>
+                    <p>Consectetur adipiscing elit. Donec sed leo in nisi vehicula bidendum</p>
                  </div>
 
                     <div class="card">
                     <img src="resources/resources2/image3.jpg" alt="JavierBardem">
                     <h3>Javier Bardem</h3>
-                    <p>consectetur adipiscing elit. Donec sed leo in nisi vehicula bidendum</p>
+                    <p>Consectetur adipiscing elit. Donec sed leo in nisi vehicula bidendum</p>
                  </div>
                 </div>
          
             </section><!--Fin de la premiere section-->
             <div class="info_clients">
                 <ul>
-                 <li>2500</li>
-                    <li>clients satisfaits</li>
-                    <li>2500</li>
-                    <li>clients satisfaits</li>
-                    <li>2500</li>
-                    <li>clients satisfaits</li>
-                    <li>2500</li>
-                    <li>clients satisfaits</li>
-                </ul>
+                    <li><span class="info_number">2500</span>Clients satisfaits</li>
+                    <li><span class="info_number">2500</span>Clients satisfaits</li>
+                    <li><span class="info_number">2500</span>Clients satisfaits</li>
+                    <li><span class="info_number">2500</span>Clients satisfaits</li>
+                    
+                </ul> 
             </div>
             <section class="our_services"><!-- Debut de la deuxieme section -->
                 <h2 id="title3">Notre services</h2>
+                
+            <div class="all_services">
+
                 <div class="services_description">
                     <img src="resources/resources2/Vector.jpg" alt="creation">
                     <h3>Création de site web</h3>
@@ -76,22 +76,24 @@
                     <img src="resources/resources2/Vector-1.jpg" alt="audit">
                     <h3>Audit qualité</h3>
                 </div>
+
+            </div>
             </section><!-- Fin de la deuxieme section -->
 
-            <section class="section3"><!-- Début de la troisieme section -->
+            <section class="formulaire"><!-- Début de la troisieme section -->
                 <h2 id="contactez-nous">Contactez-nous</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ducimus. Iusto, illo?</p>
-                <div class="formulaire">
+                <div class="formulaire_description">
                     <form action="traitement.php" method="post">
                         <!-- Debut du formulaire -->
-                        <div class="form_item">
-                        <label for="nom">Nom</label>
-                            <input type="text" name="nom" id="nom" size="50" maxlength="50">
+                        <div class="form_item-50-name">
+                        <label for="nom"></label>
+                            <input type="text" name="nom" placeholder="Nom">
                         </div>
 
-                        <div class="form-item1">
-                            <label for="categorie">Categorie</label>
-                            <input type="text" name="categorie" id="categorie" size="50" maxlength="50">
+                        <div class="form_item-50-categorie">
+                            <label for="categorie"></label>
+                            <input type="text" name="categorie" placeholder="Categorie">
                             <!-- <select name="categorie" id="categorie"> 
                                 <option value="none" selected></option>
                                 <option value="creationdesiteweb">Création de site web</option>
@@ -99,24 +101,24 @@
                             </select> -->
                         </div>
 
-                        <div class="form-item2">
-                            <label for="telephone">Téléphone</label>
-                            <input type="tel" name="telephone" id="telephone" size="50" maxlength="50">
+                        <div class="form_item-50-telephone">
+                            <label for="telephone"></label>
+                            <input type="tel" name="telephone" placeholder="Téléphone">
                         </div>
 
-                        <div class="form-item3">
-                            <label for="ville">Ville</label>
-                            <input type="text" name="ville" id="ville" size="50" maxlength="50">
+                        <div class="form_item-50-ville">
+                            <label for="ville"></label>
+                            <input type="text" name="ville" placeholder="Ville">
                         </div>
 
-                        <div class="form-item4">
-                            <label for="email">Email</label>
-                            <input type="email" name="adresse" id="email" size="50" maxlength="50">
+                        <div class="form_item-100-email">
+                            <label for="email"></label>
+                            <input type="email" name="adresse" id="email" placeholder="Email">
                         </div>
 
-                        <div class="form-item5">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message"></textarea>
+                        <div class="form_item-100-message">
+                            <label for="message"></label>
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
                         </div>
                         <input type="button" value="Envoyer"/>
                     </form><!-- Fin du formulaire -->
@@ -132,23 +134,24 @@
                 <div class="aboutus_description">
                     <h2>A propos de nous</h2>
                     <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae dolorum accusamus rem adipisci.</p>
-                </div>
-                <div class="cards2">
+                
+                    <div class="cards2"> 
 
-                    <div class="card2">
-                        <img src="resources/resources2/Vector-2.jpg" alt="vec2">
-                        <h3>Ecologique</h3>
-                    </div>
+                        <div class="card2"> 
+                            <img src="resources/resources2/Vector-2.jpg" alt="vec2">
+                            <h3>Ecologique</h3>
+                        </div>
 
-                    <div class="card2">
-                        <img src="resources/resources2/Vector-3.jpg" alt="vec3">
-                        <h3>Responsable</h3>
-                    </div>
+                        <div class="card2">
+                            <img src="resources/resources2/Vector-3.jpg" alt="vec3">
+                            <h3>Responsable</h3>
+                        </div>
 
-                    <div class="card2">
-                        <img src="resources/resources2/Vector-4.jpg" alt="vec4">
-                        <h3>24/7 Assistance</h3>
-                    </div>
+                        <div class="card2">
+                            <img src="resources/resources2/Vector-4.jpg" alt="vec4">
+                            <h3>24/7 Assistance</h3>
+                        </div>
+                    </div> 
                 </div>
 
             </section><!-- Fin de la quatrieme section -->
@@ -165,32 +168,29 @@
             <footer>
 
                 <div class="footer_description">
-                    <div class="content">
-                        <h2>Content</h2>
+                    <div class="description_content">
+                        <h3>Content</h3>
                         <p>consectetur adipiscing</p>
                     </div>
 
-                    <div class="informations">
-                        <h2>Indormations</h2>
+                    <div class="description_informations">
+                        <h3>Indormations</h3>
                         <p>consectetur adipiscing</p>
                     </div>
 
-                    <div class="services">
-                        <h2>Services</h2>
+                    <div class="description_services">
+                        <h3>Services</h3>
                         <p>consectetur adipiscing</p>
                     </div>
 
-                    <div class="c2">
-                        <h2>Aide</h2>
+                    <div class="description_aide">
+                        <h3>Aide</h3>
                         <p>consectetur adipiscing</p>
                     </div>
 
-                    <div class="mobile">
+                    <div class="description_data">
                         <p>+33 00 00 00 00 00</p>
                         <p>+33 00 00 00 00 00</p>
-                    </div>
-
-                    <div class="gps">
                         <p>75001 Paris</p>
                         <p>France</p>
                     </div>
