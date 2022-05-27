@@ -5,6 +5,8 @@
         font-size: 100%;
         margin: 0%;
         font-weight: bold;
+        font-family: sans-serif;
+        background-color: #D9B3A4;
     }
 
 /* HEADER + NAV */
@@ -18,6 +20,8 @@
 
     header{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin: 20px;
     }
 
@@ -25,17 +29,23 @@
         margin-right: 10px;
     }
 
+    nav li:hover{
+        cursor: pointer;
+    }
+
     nav ul{
         list-style-type: none;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         padding:0%;
         margin: 0%;
     }
 
     nav a{
         font-size: 50px;
-        color: #1c2126;
         text-decoration: none;
+        color: black;
     }
 
 /* BANNIERE */  
@@ -71,6 +81,7 @@
 
     p.team_description{
         font-size: 50px;
+        color: #1c2126;
     }
 
     .card h3{
@@ -89,6 +100,7 @@
     .card img{
         width: 33%;
         height: 50%;
+        border-radius: 30%;
     }   
 
 /* BARRE D'INFO */
@@ -137,8 +149,14 @@
     .services_description img{
         width: 33%;
         border-radius: 40px;
-        border: solid #F1F1F1 80px;
+        border: solid #F6F5F5 80px;
         padding: 0;
+    }
+
+    .services_description h3:hover{
+        background-color: #042328;
+        color: #ffff;
+        cursor: pointer;
     }
 
     .services_description h3{
@@ -149,7 +167,8 @@
 /* FORMULAIRe */
 
     .formulaire{
-        background-color: #053b44;   
+        background-color: #053b44;
+        padding: 80px;
     }
 
     .formulaire h2{
@@ -178,8 +197,8 @@
     }
 
     #message{
-        width: 886px;
-        height: 445px;
+        width: 773px;
+        height: 456px;
         background-color: #053b44;
         border: none;
         border-bottom: solid #ffff;
@@ -195,14 +214,15 @@
     }
 
 
-    input[type="button"]{
+    input[type="button"] {
         background-color: #d5f31f;
         color: #053b44;
         font-weight: bold;
         border-radius: 20px;
-        width: 20%;
+        width: 30%;
+        font-size: 40px;
+        height: 40%;
     }
-
 /* ABOUT_US */
 
     .bureau img {
@@ -243,6 +263,7 @@
         text-align: center;
         font-size: 50px;
         color: #053b44;
+        padding: 20px;
     }
 
 /* NOTRE GALERIE */
@@ -307,7 +328,7 @@
         font-size: 100%;
     } */
 
-  @media screen and (min-width: 1024px){ 
+  @media screen and (min-width: 85em){ 
 
     body{
         background-color: white;
@@ -330,11 +351,14 @@
     nav li{
         margin-right: 40px;
     }
+
+    nav ul {
+        flex-direction: row;
+    }
     
     
     nav a{
         font-size: 20px;
-        color: #1c2126;
         text-decoration: none;
     } 
      
@@ -415,6 +439,7 @@
             
             background-color: #053b44;
             text-align: center;
+            padding: 20px;
 
         }
 
@@ -502,7 +527,7 @@
         }
 
         #message{
-            width: 1147px;
+            width: 1142px;
             height: 441px;
             background-color: #053b44;
             border: none;
@@ -539,6 +564,7 @@
             font-weight: bold;
             border-radius: 20px;
             width: 10%;
+            font-size: 20px;
         }
 
         /* ABOUT US */
