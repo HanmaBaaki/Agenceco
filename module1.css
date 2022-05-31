@@ -12,7 +12,7 @@
 /* HEADER + NAV */
 
     header p{
-        font-size: 50px;
+        font-size: 20px;
         width: 30%;
         margin: 0%;
         color: #015A08;
@@ -40,7 +40,7 @@
     }
 
     nav a{
-        font-size: 50px;
+        font-size: 13px;
         text-decoration: none;
         color: black;
     }
@@ -54,10 +54,10 @@
     h1#banniere_title{
         position: absolute;
         color: #ffff;
-        font-size: 56px;
+        font-size: 30px;
         margin: 0;
-        top: 40%;
-        left: 33%;
+        top: 42%;
+        left: 30%;
     }
 
     span.title_color{
@@ -72,33 +72,34 @@
     }
 
     .team h2{
-        font-size: 80px;
+        font-size: 30px;
         color: #029d5b;
     }
 
     p.team_description{
-        font-size: 50px;
+        font-size: 13px;
         color: #1c2126;
     }
 
     .card h3{
-        font-size: 60px;
+        font-size: 20px;
         margin: 20px;
         color: #1c2126;
     }
     .card p{
 
-        font-size: 50px;
+        font-size: 13px;
         width: 90%;
         margin: 20px;
         color: #565D65;
     }
 
     .card img{
-        width: 33%;
+        width: 50%;
+        border-radius: 50%;
         height: 50%;
-        border-radius: 30%;
-    }   
+        object-fit: cover;
+    }
 
 /* BARRE D'INFO */
     .info_clients{
@@ -108,14 +109,12 @@
 
     .info_clients ul{
         list-style-type: none;
-        display: flex;
-        justify-content:center;
         margin: 0%;
         padding: 0%;
     }
 
     .info_clients li{
-        font-size: 40px;
+        font-size: 13px;
         padding:40px;
         color: #ffff;
     }
@@ -123,7 +122,7 @@
      span.info_number{
          display: block;
          color: #d5f31f;
-         font-size: 80px;
+         font-size: 20px;
 
     }
 
@@ -446,19 +445,18 @@
             font-size: 20px;
         }
     
-        .card img{
-            width: 50%;
-            border-radius: 50%;
-            height: 50%;
-            object-fit: cover;
-        }
+        
         /* BANNIERE D'INFO*/ 
         .info_clients{
             
             background-color: #053b44;
-            text-align: center;
             padding: 20px;
 
+        }
+
+        .info_clients ul{
+            display: flex;
+            justify-content: center;
         }
 
         .info_clients li{
@@ -519,14 +517,6 @@
          form .form_item-50:nth-child(even){
             margin-left: 4rem;
         }
-
-        /* form .form_item-50:nth-child(odd){
-            margin-right: 4rem; */
-            
-        
-         /* .form_item-50-name{
-            width: calc(50% - 3rem);            
-        }  */
 
         .form_item-50{
             width: calc(50% - 2rem);        
