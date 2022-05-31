@@ -185,32 +185,31 @@
 
 
     form input{
-        width: 50%;
-        height: 40px;
+        width: 100%;
         font-size: 50px;
         background-color: #053b44;
         border: none;
         border-bottom: solid #ffff 5px;
         border-radius: 2px;
-        margin: 40px;
+        margin: 40px 0px;
         padding: 0;
     }
 
     #message{
-        width: 773px;
-        height: 456px;
+         width: 773px;
+        height: 456px; 
         background-color: #053b44;
         border: none;
         border-bottom: solid #ffff;
         border-radius: 2px;
         font-size: 20px;
-        margin: 40px;
+        margin: 0px;
         padding: 0;
 
     }
 
     #email{
-        width: 90%;
+        width: 100%;
     }
 
 
@@ -219,9 +218,13 @@
         color: #053b44;
         font-weight: bold;
         border-radius: 20px;
-        width: 30%;
-        font-size: 40px;
-        height: 40%;
+        max-width: 120px;
+        font-size: 20px;
+        padding: 6px 6px;
+    }
+
+    input[type="button"]:hover{
+        cursor: pointer;
     }
 /* ABOUT_US */
 
@@ -236,15 +239,17 @@
         border-radius: 20px;
         /* color: #053b44; */
         width: 100%;
+        padding: 0%;
+        
     }
 
     .aboutus_description h2 {
         text-align: center;
-        font-size: 80px;
+        font-size: 30px;
     }
 
     .aboutus_description p {
-        font-size: 50px;
+        font-size: 20px;
         color: #565D65;
     }
 
@@ -255,15 +260,16 @@
 
     .card2 img {
         border: solid #053b44 10px;
-        border-radius: 150px;
+        border-radius: 50%;
         padding: 40px;
+        object-fit: contain;
     }
 
     .card2 h3 {
         text-align: center;
         font-size: 50px;
         color: #053b44;
-        padding: 20px;
+        margin: 10px 0px;
     }
 
 /* NOTRE GALERIE */
@@ -292,8 +298,11 @@
         color: #ffff;
     }
 
-    .footer_description h3 {
+    .footer_description{
         text-align: center;
+    }
+
+    .footer_description h3 {
         font-size: 80px;
 
     }
@@ -302,6 +311,18 @@
         text-align: center;
         font-size: 50px;
     }
+
+    .footer_description ul{
+        list-style-type: none;
+        font-size: 30px;
+        padding: 0;
+    }
+
+    a.number{
+        display: block;
+
+    }
+    
     /* .form-item1{
         position: relative;
         bottom: 50px;
@@ -349,7 +370,7 @@
     }
     
     nav li{
-        margin-right: 40px;
+        margin-right: 20px;
     }
 
     nav ul {
@@ -421,7 +442,7 @@
     
         .card h3{
              text-align: center;
-            font-size: 30px;
+            font-size: 30px; 
         }
     
         .card p{
@@ -433,6 +454,7 @@
             width: 50%;
             border-radius: 50%;
             height: 50%;
+            object-fit: cover;
         }
         /* BANNIERE D'INFO*/ 
         .info_clients{
@@ -498,55 +520,51 @@
             justify-content: flex-end;
         }
 
-        .form_item-50-name{
-            width: 50%;
+         form .form_item-50:nth-child(even){
+            margin-left: 4rem;
         }
 
-        .form_item-50-categorie{
-            width: 50%;
+        /* form .form_item-50:nth-child(odd){
+            margin-right: 4rem; */
+            
+        
+         /* .form_item-50-name{
+            width: calc(50% - 3rem);            
+        }  */
+
+        .form_item-50{
+            width: calc(50% - 2rem);        
         }
 
-        .form_item-50-telephone{
-            width: 50%;
-        }
+        
 
-        .form_item-50-ville{
-            width: 50%;
-        }
-
-        .form_item-100-email{
-            width: 100%;
+        .form_item-100{
+           width: 100%;
         }
 
         #email{
-            width: 96%;
-        }
-
-        .form_item-100-message{
             width: 100%;
         }
 
         #message{
-            width: 1142px;
-            height: 441px;
+            width: 1188px;
+            height: 438px;
             background-color: #053b44;
             border: none;
             border-bottom: solid #ffff;
             border-radius: 2px;
             font-size: 20px;
-            margin: 40px;
-            padding: 0;
     
         }
 
         form input {
-            width: 50%;
+            width: 100%;
             font-size: 20px;
             background-color: #053b44;
             border: none;
             border-bottom: solid #ffff;
             border-radius: 2px;
-            margin: 40px;
+            margin: 40px 0;
             padding: 0;
         }
 
@@ -559,12 +577,11 @@
         }
 
         input[type="button"] {
-            background-color: #d5f31f;
-            color: #053b44;
-            font-weight: bold;
-            border-radius: 20px;
-            width: 10%;
-            font-size: 20px;
+            font-size: 10px;
+            max-width: 10rem;
+            padding: 0.5rem 0.5rem;
+            border-bottom: none;
+            margin: 20px 0px;
         }
 
         /* ABOUT US */
@@ -590,6 +607,7 @@
             border-radius: 20px;
             /* color: #053b44; */
             width: 100%;
+            padding:20px;
         }
         
         .aboutus_description h2 {
@@ -613,6 +631,7 @@
         .card2 h3 {
             text-align: center;
             font-size: 20px;
+            padding: 0%;
         }
 
         /* NOTRE GALERIE */
@@ -646,24 +665,35 @@
             justify-content: space-around;
             align-items: baseline;
             padding: 40px;
+            text-align: initial;
         }
 
         .footer_description h3 {
-            text-align: center;
-            font-size: 40px;
+            font-size: 20px;
         }
 
         .footer_description p {
             text-align: center;
-            font-size: 15px;
+            font-size: 10px;
             margin: 0;
-            
-
         }
 
+        .footer_description ul{
+            list-style-type: none;
+            font-size: 10px;
+            padding: 0;
+        }
+        
         .data_number{
             padding: 10px;
+        }
 
+        .data_number ul{
+            list-style-type: none;
+        }
+
+        a.number{
+            font-size: 20px;
         }
 
         .data_adresse{
