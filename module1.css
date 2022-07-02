@@ -491,13 +491,13 @@ nav a{
 
     .cards{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .card img{
-        width: 55%;
+        width: 150px;
         border-radius: 50%;
-        height: 50%;
+        height: 150px;
         object-fit: cover;
         margin-top: 40px;
     }
@@ -516,13 +516,11 @@ nav a{
     .info_clients{
         
         background-color: #053b44;
-        padding: 20px 0px;
-
     }
 
     .info_clients ul{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
     .info_clients li{
